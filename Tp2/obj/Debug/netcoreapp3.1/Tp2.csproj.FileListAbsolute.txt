@@ -169,3 +169,4 @@ G:\Abdelwahd\Tp2\Tp2\obj\Debug\netcoreapp3.1\Razor\Views\Module\Create.cshtml.g.
 G:\Abdelwahd\Tp2\Tp2\obj\Debug\netcoreapp3.1\Razor\Views\Module\Edit.cshtml.g.cs
 G:\Abdelwahd\Tp2\Tp2\obj\Debug\netcoreapp3.1\Razor\Views\Module\Details.cshtml.g.cs
 G:\Abdelwahd\Tp2\Tp2\obj\Debug\netcoreapp3.1\Razor\Views\Module\Delete.cshtml.g.cs
+G:\Abdelwahd\Tp2\Tp2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Admin.cshtml.g.cs
