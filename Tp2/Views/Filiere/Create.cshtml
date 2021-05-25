@@ -1,0 +1,47 @@
+﻿@model Tp2.Models.Filiere
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Filiere</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="nomF" class="control-label"></label>
+                <input asp-for="nomF" class="form-control" />
+                <span asp-validation-for="nomF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="codeSecteur" class="control-label"></label>
+                @*<input asp-for="codeSecteur" class="form-control" />*@
+            <select asp-for="codeSecteur" class="form-control">
+                
+                @foreach (var item in ViewBag.secteurs as List<Secteur>)
+                {
+                    <option value="@item.codeSecteur">@item.nomSecteur</option>
+                }
+            </select>
+                
+                <span asp-validation-for="codeSecteur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
